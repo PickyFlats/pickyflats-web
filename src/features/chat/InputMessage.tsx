@@ -11,7 +11,7 @@ import {
   MESSAGES_BUCKET,
   MESSAGES_ID,
   storage,
-} from '@/lib/client';
+} from '@/lib/client-old';
 
 import { pushListenerUpdate } from '@/database/listener';
 

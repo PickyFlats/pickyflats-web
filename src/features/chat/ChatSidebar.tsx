@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { BiSearch } from 'react-icons/bi';
 import { FaTimes } from 'react-icons/fa';
 
-import { client, DATABASE_ID, LISTENERS_ID } from '@/lib/client';
+import { client, DATABASE_ID, LISTENERS_ID } from '@/lib/client-old';
 import { isEmptyArray } from '@/lib/helper';
 
 import { fetchConversationsForUser } from '@/database/conversation';

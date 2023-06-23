@@ -1,6 +1,6 @@
 import { Query } from 'appwrite';
 
-import { DATABASE_ID, databases, MESSAGES_ID } from '@/lib/client';
+import { DATABASE_ID, databases, MESSAGES_ID } from '@/lib/client-old';
 
 import { Message } from '@/types/message';
 

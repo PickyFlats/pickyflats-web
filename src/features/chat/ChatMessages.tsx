@@ -7,7 +7,7 @@ import {
   DATABASE_ID,
   MESSAGES_BUCKET,
   storage,
-} from '@/lib/client';
+} from '@/lib/client-old';
 
 import { getMessageById } from '@/database/message';
 

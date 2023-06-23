@@ -3,7 +3,7 @@ interface Iprops {
   fileID: string;
 }
 
-import { CONTENT_BUCKET, storage } from '@/lib/client';
+import { CONTENT_BUCKET, storage } from '@/lib/client-old';
 
 export const ImageCard = (props: Iprops) => {
   const { fileID } = props;

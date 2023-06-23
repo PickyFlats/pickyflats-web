@@ -6,7 +6,7 @@ import {
   databases,
   MESSAGES_ID,
   PROFILES_ID,
-} from '@/lib/client';
+} from '@/lib/client-old';
 
 interface IProps {
   limit?: number;

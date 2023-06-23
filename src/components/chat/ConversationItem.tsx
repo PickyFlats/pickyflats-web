@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
 
-import { PROFILES_BUCKET, storage } from '@/lib/client';
+import { PROFILES_BUCKET, storage } from '@/lib/client-old';
 import { timeAgo } from '@/lib/date';
 
 import useAuthStore from '@/store/useAuthStore';
@@ -12,7 +12,7 @@ export default function ConversationItem({ item }: { item?: Conversation }) {
   const { user } = useAuthStore();
   const avatar = storage.getFilePreview(
     PROFILES_BUCKET,
-    item?.participant?.profile_img ?? ''
+    item?.participant?.profilePicture ?? ''
   );
 
   const lastActivityDate = item?.participant?.lastActivity
@@ -27,7 +27,7 @@ export default function ConversationItem({ item }: { item?: Conversation }) {
   return (
     <div className='flex items-start p-2'>
       <div className='relative flex-shrink-0'>
-        {item?.participant?.profile_img ? (
+        {item?.participant?.profilePicture ? (
           <img
             src={avatar.href}
             alt='Avatar'

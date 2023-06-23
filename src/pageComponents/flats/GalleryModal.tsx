@@ -5,7 +5,7 @@ import Tabs from '@mui/material/Tabs';
 import { useState } from 'react';
 import { CgClose } from 'react-icons/cg';
 
-import { CONTENT_BUCKET, storage } from '@/lib/client';
+import { CONTENT_BUCKET, storage } from '@/lib/client-old';
 
 import { Bathrooms } from '@/pageComponents/flats/Bathrooms';
 import { Kitchen } from '@/pageComponents/flats/Kitchen';

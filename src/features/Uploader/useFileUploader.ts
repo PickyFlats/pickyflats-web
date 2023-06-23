@@ -1,7 +1,7 @@
 import { ID } from 'appwrite';
 import { useState } from 'react';
 
-import { CONTENT_BUCKET, storage } from '@/lib/client';
+import { CONTENT_BUCKET, storage } from '@/lib/client-old';
 
 interface IUseFileUploader {
   onSuccess: (keys: string[] | null) => void;

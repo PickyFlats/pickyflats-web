@@ -1,8 +1,8 @@
 import { ID, Query } from 'appwrite';
 
-import { DATABASE_ID, databases, LISTINGCOSTS_ID } from '@/lib/client';
+import { DATABASE_ID, databases, LISTINGCOSTS_ID } from '@/lib/client-old';
 
-import { LISTINGS_ID } from '../lib/client';
+import { LISTINGS_ID } from '../lib/client-old';
 
 import { Listing } from '@/types/listing';
 

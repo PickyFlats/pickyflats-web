@@ -6,7 +6,7 @@ import { BiComment } from 'react-icons/bi';
 import { FcLike } from 'react-icons/fc';
 import { MdBathroom, MdBedroomParent, MdKitchen } from 'react-icons/md';
 
-import { CONTENT_BUCKET, storage } from '@/lib/client';
+import { CONTENT_BUCKET, storage } from '@/lib/client-old';
 import clsxm from '@/lib/clsxm';
 import logger from '@/lib/logger';
 
