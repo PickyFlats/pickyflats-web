@@ -1,3 +1,5 @@
+import { Iroom } from '@/store/flatStore';
+
 export type Listing = {
   $id: string;
   purpose: 'sell' | 'rent';
@@ -8,7 +10,8 @@ export type Listing = {
   room: number;
   bathroom: number;
   kitchen: number;
-  gallery: string | object;
+  // gallery: string | object;
+  gallery: Iroom[];
   sellerCountry: string;
   sellerCity: string;
   sellerEmail: string;

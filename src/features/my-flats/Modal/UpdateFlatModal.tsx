@@ -139,7 +139,7 @@ export const UpdateFlatModalContents = ({
         flatAmenities: _flatAmenities,
         flatPolicies: _flatPolicies,
         ...basics,
-        // gallery: JSON.stringify(gallery), //!TODO: gallery
+        gallery: gallery, //!TODO: gallery
         ...contactAndLocation,
       });
 
@@ -299,6 +299,7 @@ export const UpdateFlatModal = ({ data }: { data: Listing }) => {
     });
 
     // ! todo; with file uploading
+    setGallery(data.gallery || []);
     // setGallery(JSON.parse(data.gallery as string));
 
     setContactAndLocation({

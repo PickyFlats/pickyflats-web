@@ -13,11 +13,11 @@ export const fetchListingById = async (listingID) => {
 
 // update listing
 export const updateListingById = async (listingID, data) => {
-  await api.patch(`/listings/${listingID}`);
+  await api.patch(`/listings/${listingID}`, data);
 };
 
 export const updateListingCost = async (listingID, data) => {
-  await api.patch(`/listing-costs/listing/${listingID}`);
+  await api.patch(`/listing-costs/listing/${listingID}`, data);
 };
 
 // delete

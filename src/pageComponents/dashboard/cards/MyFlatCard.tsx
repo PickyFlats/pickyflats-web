@@ -59,8 +59,8 @@ export const MyFlatCard = (props: Iprop) => {
   useEffect(() => {
     const decodeGallery = () => {
       try {
-        const _gallery: Iroom[] = JSON.parse(data!.gallery.toString());
-        setGallery(_gallery);
+        // const _gallery: Iroom[] = JSON.parse(data!.gallery.toString());
+        setGallery(data?.gallery || []);
       } catch (error) {
         logger('Listing Gallery load failed');
       }
