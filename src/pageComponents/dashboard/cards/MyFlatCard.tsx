@@ -10,7 +10,6 @@ import { CONTENT_BUCKET, storage } from '@/lib/client-old';
 import clsxm from '@/lib/clsxm';
 import logger from '@/lib/logger';
 
-import { deleteListing } from '@/database/listing';
 import { AllFlatTypes } from '@/datas/flatTypes';
 
 import { Iroom } from '@/store/flatStore';
@@ -45,7 +44,7 @@ export const MyFlatCard = (props: Iprop) => {
         await storage.deleteFile(CONTENT_BUCKET, photoID);
       }
     }
-    await deleteListing(data?.$id, data?.costs?.$id);
+    // await deleteListing(data?.$id, data?.costs?.$id);
 
     openSnackbar('Listing delete successfully', 'warning', {
       horizontal: 'center',
