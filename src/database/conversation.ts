@@ -1,5 +1,6 @@
 import { ID, Query } from 'appwrite';
 
+import api from '@/lib/api';
 import {
   CONVERSATIONS_ID,
   DATABASE_ID,
@@ -23,10 +24,16 @@ export const createConversation = async (data) => {
 };
 
 export const getConversationByID = async (id) => {
-  return await databases.getDocument(DATABASE_ID, CONVERSATIONS_ID, id);
+  const convRes = await api.get(`/chat/conversations/${id}`);
+  return convRes.data;
 };
 
 // fetch user conversations
+export const fetchConversations = async (props?: IProps) => {
+  const convRes = await api.get('/chat/conversations/me');
+  return convRes.data;
+};
+
 export const fetchConversationsForUser = async (userId, props?: IProps) => {
   const _listConversations = await databases.listDocuments(
     DATABASE_ID,

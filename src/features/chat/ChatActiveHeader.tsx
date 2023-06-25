@@ -28,6 +28,7 @@ export default function ChatActiveHeader({ user }: { user? }) {
 
   const isMediumScreen = useResponsive('down', 'lg');
 
+  const fullName = `${user?.firstName} ${user?.lastName}`;
   return (
     <div className='flex items-center border-b border-gray-200 p-4'>
       {isMediumScreen && (
@@ -44,7 +45,7 @@ export default function ChatActiveHeader({ user }: { user? }) {
           />
         ) : (
           <span className='text-md font-bold uppercase text-white'>
-            {user?.name.substring(0, 2).toUpperCase()}
+            {`${user?.firstName?.[0].toUpperCase()}${user?.lastName?.[0].toUpperCase()}`}
           </span>
         )}
         <span
@@ -53,7 +54,7 @@ export default function ChatActiveHeader({ user }: { user? }) {
           }`}
         />
       </div>
-      <h2 className='ml-4 font-bold'>{user?.name}</h2>
+      <h2 className='ml-4 font-bold'>{fullName}</h2>
     </div>
   );
 }

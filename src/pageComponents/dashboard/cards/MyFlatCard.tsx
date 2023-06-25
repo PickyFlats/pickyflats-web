@@ -89,7 +89,7 @@ export const MyFlatCard = (props: Iprop) => {
         className={clsxm(
           'bg-secondary-main ', //!TODO: try for better theming
           // 'shadow-md',
-          'relative flex h-[450px]  w-[300px] flex-col items-center justify-center rounded-3xl p-3 align-middle'
+          'relative flex h-[450px]  w-[300px] flex-col items-center justify-center rounded-lg p-3 pt-4 align-middle'
         )}
       >
         <div className='relative z-50 h-[30vh] w-full rounded-3xl'>
