@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 export default function PasswordLessLogin() {
   useEffect(() => {
-    require('@passageidentity/passage-auth');
+    require('@passageidentity/passage-elements/passage-auth');
   }, []);
   return (
     <div>
