@@ -229,15 +229,6 @@ export default function LoginPage() {
                   <p className='text-primary-main mt-3 text-center text-sm font-medium leading-[150%]'>
                     <Link href='/auth/forgot-password'>Forgot Password ?</Link>
                   </p>
-                  <p className='mt-4 text-center text-sm text-gray-500'>
-                    Don't have an account?
-                    <Link
-                      href='/auth/register'
-                      className='text-primary-main hover:text-primary-light ml-1 font-semibold leading-6'
-                    >
-                      Sign Up
-                    </Link>
-                  </p>
                 </div>
               )}
 
@@ -267,6 +258,16 @@ export default function LoginPage() {
                   </MUIButton>
                 )}
               </div>
+
+              <p className='mt-4 text-center text-sm text-gray-500'>
+                Don't have an account?
+                <Link
+                  href='/auth/register'
+                  className='text-primary-main hover:text-primary-light ml-1 font-semibold leading-6'
+                >
+                  Sign Up
+                </Link>
+              </p>
             </div>
           </div>
         </main>
